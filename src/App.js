@@ -1,8 +1,8 @@
 import React from "react";
-import Counter from "./ch08/Counter";
+import Info from "./ch08/Info";
 
 const App = () => {
-  return <Counter />;
+  return <Info />;
 };
 
 export default App;
