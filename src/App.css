@@ -30,7 +30,8 @@
   color: white;
 }
 
-.App-link {
+/* App 안에 들어 있는 a 태그 */
+.App a {
   color: #61dafb;
 }
 
