@@ -125,3 +125,7 @@ yarn add qs
 - `JSON.stringify(value[, replacer[, space]])` 는 value 값을 JSON 문자열로 변환한다. 매개변수로 null과 2를 넣으면 들여쓰기를 포함한 문자열을 반환 한다.
 - withRouter를 사용하면 현재 자신을 보여 주고 있는 라우트 컴포넌트(이전: Profiles) 를 기준으로 match가 전달된다. Profiles를 위한 라우트를 설정할 때는 `path="/profiles"`라고만 입력했으므로 username 파라미터를 읽어 오지 못하는 상태이기 떄문이다.
 - 따라서 Profiles 에서 Profile 컴포넌트에 넣으면 제대로 나온다.
+
+### 13.6.3 Switch
+
+Switch 컴포넌트는 여러 Route를 감싸서 그 중 일치하는 단 하나의 라우트만을 랜더링 시켜준다.<br />
