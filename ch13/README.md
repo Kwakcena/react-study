@@ -62,3 +62,11 @@ yarn add react-router-dom
 
 - 파라미터 예시: /profiles/velopert
 - 쿼리 예시: /about?details=true
+
+### 13.4.1 URL 파라미터
+
+`/profile/velopert` 와 같은 형식으로 뒷부분에 유동적인 username값을 넣어 줄 때 해당 값을 props로 받아 와서 조회하도록 한다.
+
+- URL 파라미터를 사용할 때는 라우트로 사용되는 컴포넌트에서 받아 오는 `match`라는 객체 안의 `params` 값을 참조한다.
+- `match` 객체 안에는 현재 컴포넌트가 어떤 경로 규칙에 의해 보이는지에 대한 정보가 들어 있다.
+- Route의 path 규칙에 `/profiles/:username` 을 적용하면 `match.params.username` 값을 통해 현재 username 값을 조회할 수 있다.
