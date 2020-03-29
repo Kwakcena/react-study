@@ -113,3 +113,13 @@ yarn add qs
 - `history` 객체는 라우트로 사용된 컴포넌트에 `match, location`과 함께 전달되는 props중 하나.
 - 컴포넌트 내에 구현하는 메서드에서 라우트 API를 호출할 수 있다.
 - 특정 버튼을 눌렀을 때 뒤로 가거나, 로그인 후 화면을 전환하거나, 다른 페이지로 이탈하는 것을 방지해야 할 때 history를 활용한다.
+
+### 13.6.2 withRouter
+
+- withRouter 함수는 Hoc(Higher-order Component) 이다.
+- 라우트로 사용된 컴포넌트가 아니어도 match, location, history 객체를 접근할 수 있게 해 준다.
+
+#### 사용법
+
+- withRouter를 사용할 땐 컴포넌트를 내보내 줄 때 함수로 감싸 준다.
+- `JSON.stringify(value[, replacer[, space]])` 는 value 값을 JSON 문자열로 변환한다. 매개변수로 null과 2를 넣으면 들여쓰기를 포함한 문자열을 반환 한다.
