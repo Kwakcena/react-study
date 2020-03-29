@@ -129,3 +129,9 @@ yarn add qs
 ### 13.6.3 Switch
 
 Switch 컴포넌트는 여러 Route를 감싸서 그 중 일치하는 단 하나의 라우트만을 랜더링 시켜준다.<br />
+
+### 13.6.4 NavLink
+
+현재 경로와 Link에서 사용하는 경로가 일치하는 경우 특정 스타일 혹은 CSS 클래스를 적용할 수 있는 컴포넌트.<br />
+
+- NavLink에서 링크가 활성화되었을 때의 스타일을 적용할 때는 activeStyle 값을, CSS 클래스를 적용할 때는 activeClassName 값을 props로 넣어 주면 된다.
