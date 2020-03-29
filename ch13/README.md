@@ -39,3 +39,4 @@ yarn add react-router-dom
 #### 문제점
 
 /about 경로로 들어가면 About 컴포넌트만 나오기를 기대했지만, /about 경로가 / 규칙에도 일치하기 때문에 Home 컴포넌트도 같이 나온다.<br />
+이는 Home을 위한 Route 컴포넌트를 사용할 때 exact라는 props를 true로 설정하면 된다.
