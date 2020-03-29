@@ -49,3 +49,7 @@ yarn add react-router-dom
 ```
 <Link to="주소">내용</Link>
 ```
+
+## 13.3 Route 하나에 여러 개의 path 설정하기
+
+- Route를 두 번 사용하는 대신, path props를 배열로 설정해 주면 여러 경로에서 같은 컴포넌트를 보여 줄 수 있다.
