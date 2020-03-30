@@ -45,3 +45,14 @@ setTimeout의 인자로 전달된 printMe 함수를 **콜백 함수** 라 한다
 - 함수의 앞부분에 `async` 키워드를 추가.
 - 함수 내부에서 Promise의 앞부분에 `await` 키워드를 추가.
 - 이렇게 하면 Promise가 끝날 때까지 기다리고, 결과 값을 특정 변수에 담을 수 있다.
+
+## 14.2 axios로 API 호출해서 데이터 받아 오기
+
+- axios는 현재 가장 많이 사용되고 있는 자바스크립트 HTTP 클라이언트.
+- HTTP 요청을 Promise 기반으로 처리한다.
+
+```bash
+yarn add axios
+```
+
+- onClick 함수에 `axios.get` 함수를 사용했다. 이 함수는 파라미터로 전달된 주소에 GET 요청을 해 준다. 이에 대한 결과는 `.then`을 통해 비동기적으로 확인이 가능하다.
