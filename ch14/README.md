@@ -130,3 +130,16 @@ NewsItem 컴포넌트는 article 이라는 객체를 props로 통째로 받아 �
 
 - NewsList 컴포넌트에서 현재 props로 받아 온 category에 따라 카테고리를 지정하여 API를 요청한다.
 - category값이 바뀔 때마다 뉴스를 새로 불러와야 하기 때문에 useEffect의 의존 배열에 category를 넣어 주어야 한다.
+
+## 14.7 리액트 라우터 적용하기
+
+useState로 관리하던 카테고리 값을 리액트 라우터의 URL 파라미터를 사용하여 관리해본다.
+
+### 14.7.1 리액트 라우터의 설치 및 적용
+
+- 리랙트 라우터를 설치하고 index.js에 적용한다.
+
+### 14.7.2 NewsPage 생성
+
+- 선택된 category값을 URL 파라미터를 통해 사용할 것이다.
+- localhost:3000/business -> 비즈니스 뉴스를 보여줌.

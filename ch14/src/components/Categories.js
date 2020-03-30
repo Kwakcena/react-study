@@ -69,17 +69,11 @@ const Category = styled.div`
   }
 `;
 
-const Categories = ({ onSelect, category }) => {
+const Categories = () => {
   return (
     <CategoriesBlock>
       {categories.map(c => (
-        <Category
-          key={c.name}
-          active={category === c.name}
-          onClick={() => onSelect(c.name)}
-        >
-          {c.text}
-        </Category>
+        <Category key={c.name}>{c.text}</Category>
       ))}
     </CategoriesBlock>
   );
