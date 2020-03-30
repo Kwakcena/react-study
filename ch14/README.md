@@ -105,3 +105,19 @@ NewsItem 컴포넌트는 article 이라는 객체를 props로 통째로 받아 �
 - async/await를 사용하고 싶다면 함수 내부에 async 키워드가 붙은 또다른 함수를 만들어서 사용해야 한다.
 - loading이라는 상태를 이용해 API 요청이 대기 중인이 판별한다.
 - map 함수를 사용하여 컴포넌트 배열로 변환할 때 `!articles`를 조회하여 해당 값이 현재 null이 아닌지 검사해야 한다. 데이터가 없으면 map 함수가 없기 때문에 렌더링 과정에서 오류가 난다.
+
+## 14.6 카테고리 기능 구현하기
+
+총 6개의 카테고리가 있다.
+
+- business
+- science
+- entertainment
+- sports
+- health
+- technology
+
+### 14.6.1 카테고리 선택 UI 만들기
+
+- Categories.js 컴포넌트를 만든다.
+- name은 실제 카테고리 값, text는 렌더링할 때 사용할 한글 카테고리를 가리킨다.
