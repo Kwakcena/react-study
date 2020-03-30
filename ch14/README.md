@@ -88,3 +88,8 @@ yarn add styled-components
 - urlToImage: 뉴스 이미지
 
 NewsItem 컴포넌트는 article 이라는 객체를 props로 통째로 받아 와서 사용한다.<br />
+
+### 14.4.2 NewsList 만들기
+
+- 더미 데이터를 NewsItem에 전달.
+- styled를 적용한다.
