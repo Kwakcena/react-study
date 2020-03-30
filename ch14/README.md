@@ -125,3 +125,8 @@ NewsItem 컴포넌트는 article 이라는 객체를 props로 통째로 받아 �
 - category의 값을 업데이트 하는 함수인 onSelect 함수도 만든다.
 - 이를 Categories 컴포넌트에 props로 전달한다. 또한 category 값을 NewsList 컴포넌트에도 전달한다.
 - 선택된 category에 따라 글씨의 style이 달라진다.
+
+### 14.6.2 API를 호출할 때 카테고리 지정하기
+
+- NewsList 컴포넌트에서 현재 props로 받아 온 category에 따라 카테고리를 지정하여 API를 요청한다.
+- category값이 바뀔 때마다 뉴스를 새로 불러와야 하기 때문에 useEffect의 의존 배열에 category를 넣어 주어야 한다.
