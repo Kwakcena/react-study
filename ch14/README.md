@@ -121,3 +121,7 @@ NewsItem 컴포넌트는 article 이라는 객체를 props로 통째로 받아 �
 
 - Categories.js 컴포넌트를 만든다.
 - name은 실제 카테고리 값, text는 렌더링할 때 사용할 한글 카테고리를 가리킨다.
+- App.js 에서 category의 상태를 useState로 관리한다.
+- category의 값을 업데이트 하는 함수인 onSelect 함수도 만든다.
+- 이를 Categories 컴포넌트에 props로 전달한다. 또한 category 값을 NewsList 컴포넌트에도 전달한다.
+- 선택된 category에 따라 글씨의 style이 달라진다.
