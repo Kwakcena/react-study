@@ -143,3 +143,11 @@ useState로 관리하던 카테고리 값을 리액트 라우터의 URL 파라�
 
 - 선택된 category값을 URL 파라미터를 통해 사용할 것이다.
 - localhost:3000/business -> 비즈니스 뉴스를 보여줌.
+
+### 14.7.3 Categories에서 NavLink 사용하기
+
+- 선택된 카테고리에 다른 스타일을 주는 기능을 NavLink로 대체한다.
+- 일반 HTML 요소가 아닌 특정 컴포넌트에 styled-components를 사용할 때는 `styled(컴포넌트이름)\`\``과 같은 형식을 사용한다.
+- NavLink로 만들어진 Category 컴포넌트에 to 값은 "/카테고리이름"으로 설정한다.
+- 전체보기의 경우는 예외적으로 "/"로 설정한다.
+- to값이 "/"일 때는 exact를 true로 설정해야 한다.
