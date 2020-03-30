@@ -77,3 +77,14 @@ yarn add styled-components
 
 - NewsItem은 각 뉴스 정보를 보여 주는 컴포넌트.
 - NewsList는 API를 요청하고 뉴스 데이터가 들어 있는 배열을 컴포넌트 배열로 변환하여 렌더링해 주는 컴포넌트.
+
+### 14.4.1 NewsItem 만들기
+
+뉴스 데이터 중 아래의 필드를 리액트 컴포넌트로 나타낸다.
+
+- title: 제목
+- description: 내용
+- url: 링크
+- urlToImage: 뉴스 이미지
+
+NewsItem 컴포넌트는 article 이라는 객체를 props로 통째로 받아 와서 사용한다.<br />
