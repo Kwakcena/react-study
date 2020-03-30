@@ -32,4 +32,9 @@ setTimeout의 인자로 전달된 printMe 함수를 **콜백 함수** 라 한다
 
 - `callbackExample.js` 코드는 `increase` 함수에 0과 result 라는 `callback` 함수를 전달하고 있다.
 - setTimeout 내부에서 0에 10을 더하는 작업을 처리한 뒤 callback 함수를 호출해서 increase에 있는 console.log가 실행 되는 것이다.
-- callback 함수를 중첩하여 구현하면 여러 번 호출할 수 있지만 가독성이 떨어지므로 지양해야 할 형태이다.
+- callback 함수를 중첩하여 구현하면 여러 번 호출할 수 있지만 가독성이 떨어지므로 지양해야 할 형태이다. 이를 콜백 지옥이라 한다.
+
+### 14.1.2 Promise
+
+- Promise는 콜백 지옥 같은 코드가 형성되지 않게 하는 방안이다.
+- `.then`을 통해 그 다음 작업을 설정한다.
