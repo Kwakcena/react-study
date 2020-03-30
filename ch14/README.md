@@ -64,3 +64,16 @@ yarn add axios
 - https://newsapi.org/register 에서 가입하면 발급 가능.
 - https://newsapi.org/s/south-korea-news-api 에서 한국 뉴스를 가져오는 API에 대한 설명서가 있다.
 - 전체 뉴스를 불러오는 API로 대체한다.
+
+## 14.4 뉴스 뷰어 UI 만들기
+
+- styled-components를 사용해서 뉴스 정보를 보여 줄 컴포넌트를 만든다.
+
+```
+yarn add styled-components
+```
+
+#### NewsItem.js 와 NewsList.js
+
+- NewsItem은 각 뉴스 정보를 보여 주는 컴포넌트.
+- NewsList는 API를 요청하고 뉴스 데이터가 들어 있는 배열을 컴포넌트 배열로 변환하여 렌더링해 주는 컴포넌트.
