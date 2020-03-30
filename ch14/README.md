@@ -27,3 +27,9 @@ console.log("대기 중...");
 
 setTimeout이 사용되는 시점에서 코드가 3초동안 멈추는게 아니라, 모든 코드가 호출되고 3초 뒤에 지정해 준 printMe가 호출된다.<br />
 setTimeout의 인자로 전달된 printMe 함수를 **콜백 함수** 라 한다.
+
+### 14.1.1 콜백 함수
+
+- `callbackExample.js` 코드는 `increase` 함수에 0과 result 라는 `callback` 함수를 전달하고 있다.
+- setTimeout 내부에서 0에 10을 더하는 작업을 처리한 뒤 callback 함수를 호출해서 increase에 있는 console.log가 실행 되는 것이다.
+- callback 함수를 중첩하여 구현하면 여러 번 호출할 수 있지만 가독성이 떨어지므로 지양해야 할 형태이다.
