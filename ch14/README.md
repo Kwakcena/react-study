@@ -57,3 +57,10 @@ yarn add axios
 
 - onClick 함수에 `axios.get` 함수를 사용했다. 이 함수는 파라미터로 전달된 주소에 GET 요청을 해 준다. 이에 대한 결과는 `.then`을 통해 비동기적으로 확인이 가능하다.
 - 화살표 함수에 async/await를 적용할 때는 `async () => {}` 와 같은 형식으로 적용한다.
+
+## 14.3 newsapi API 키 발급받기
+
+- 최신 뉴스를 불러온 후 보여 줄 것.
+- https://newsapi.org/register 에서 가입하면 발급 가능.
+- https://newsapi.org/s/south-korea-news-api 에서 한국 뉴스를 가져오는 API에 대한 설명서가 있다.
+- 전체 뉴스를 불러오는 API로 대체한다.
