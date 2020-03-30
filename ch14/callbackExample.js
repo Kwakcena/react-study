@@ -14,30 +14,23 @@ function increase(number) {
   return promise;
 }
 
-increase(0)
-  .then(number => {
-    // Promise에서 resolve된 값은 .then을 통해 받아 올 수 있음.
-    console.log(number);
-    return increase(number); //Promise를 리턴하면
-  })
-  .then(number => {
-    // 또 .then으로 처리 가능.
-    console.log(number);
-    return increase(number);
-  })
-  .then(number => {
-    console.log(number);
-    return increase(number);
-  })
-  .then(number => {
-    console.log(number);
-    return increase(number);
-  })
-  .then(number => {
-    console.log(number);
-    return increase(number);
-  })
-  .catch(e => {
-    // 도중에 에러가 발생한다면 .catch를 통해 알 수 있음
+async function runTasks() {
+  try {
+    let result = await increase(0);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+    result = await increase(result);
+    console.log(result);
+  } catch (e) {
     console.log(e);
-  });
+  }
+}
+
+runTasks();
