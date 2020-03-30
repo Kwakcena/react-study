@@ -147,7 +147,11 @@ useState로 관리하던 카테고리 값을 리액트 라우터의 URL 파라�
 ### 14.7.3 Categories에서 NavLink 사용하기
 
 - 선택된 카테고리에 다른 스타일을 주는 기능을 NavLink로 대체한다.
-- 일반 HTML 요소가 아닌 특정 컴포넌트에 styled-components를 사용할 때는 `styled(컴포넌트이름)\`\``과 같은 형식을 사용한다.
+- 일반 HTML 요소가 아닌 특정 컴포넌트에 styled-components를 사용할 때는 `styled(컴포넌트이름)''`과 같은 형식을 사용한다.
 - NavLink로 만들어진 Category 컴포넌트에 to 값은 "/카테고리이름"으로 설정한다.
 - 전체보기의 경우는 예외적으로 "/"로 설정한다.
 - to값이 "/"일 때는 exact를 true로 설정해야 한다.
+
+## 14.8 usePromise 커스텀 Hook 만들기
+
+컴포넌트에서 API 호출처럼 Promise를 사용해야 하는 경우 더욱 간결하게 코드를 작성할 수 있도록 해 주는 커스텀 Hook을 만든다.
