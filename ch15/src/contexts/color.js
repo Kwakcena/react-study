@@ -4,7 +4,7 @@ const ColorContext = createContext({
   state: { color: "black", subcolor: "red" },
   actions: {
     setColor: () => {},
-    setSubColor: () => {},
+    setSubcolor: () => {},
   },
 });
 
